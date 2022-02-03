@@ -74,10 +74,6 @@ run();
 
 // using class implmentation.
 class Stack {
-  // max_size = 10;
-  // anArray = [];
-  // anArray.length = max_size;
-
   constructor(max_size = 10, anArray = [], top = -1) {
     this.max_size = max_size;
     this.anArray = new Array(max_size);
@@ -86,6 +82,9 @@ class Stack {
 
   //anArray.length = this.max_size;
 
+  // method to add an element to the top od the stack
+  // INPUT: takes a single argument
+  // OUPUT: no output but add element to the top od the stack.
   push(x) {
     // check if stack is overflow
     if (this.top === this.max_size - 1) {
@@ -143,6 +142,9 @@ class Stack {
     console.log("\n");
   }
 
+  // method to push & pop to the stack, also print what is in the stack.
+  // INPUT: takes no argument
+  // OUPUT: .
   run() {
     this.push(2);
     this.print();
