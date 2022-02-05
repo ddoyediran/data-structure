@@ -76,7 +76,8 @@ run();
 class Stack {
   constructor(max_size = 10, anArray = [], top = -1) {
     this.max_size = max_size;
-    this.anArray = new Array(max_size);
+    //this.anArray = new Array(max_size); // non-dynamic array implementation.
+    this.anArray = anArray;
     this.top = top;
   }
 
@@ -87,10 +88,15 @@ class Stack {
   // OUPUT: no output but add element to the top od the stack.
   push(x) {
     // check if stack is overflow
-    if (this.top === this.max_size - 1) {
-      console.log("Stack is overflow");
-      return;
-    }
+    // if (this.top === this.anArray.length - 1) {
+    //   console.log("Stack is overflow");
+    //   this.anArray = new Array(this.max_size * 2);
+    //   this.anArray = [...this.anArray];
+    //   return;
+    // }
+
+    // with dynamic array, array cannot be overflow
+
     this.top++;
     this.anArray[this.top] = x;
   }
