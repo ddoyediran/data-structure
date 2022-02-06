@@ -2,9 +2,7 @@
  * Example of using stack to check if Parentheses in expression are balanced
  */
 
-function balancedParen() {
-  const expre = "[()]{}{[()()]()}";
-
+function balancedParen(expre) {
   const parenArray = [
     ["[", "]"],
     ["{", "}"],
@@ -69,7 +67,10 @@ function balancedParen() {
 
 // console.log(balancedParen());
 
-const testIsBalance = balancedParen();
+const expression1 = "[()]{}{[()()]()}"; // return "Balanced"
+const expression2 = "[()]{}{()]()}"; // return "Not Balanced"
+
+const testIsBalance = balancedParen(expression1);
 
 if (testIsBalance) {
   console.log("Balanced");
