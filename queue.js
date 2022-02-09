@@ -105,6 +105,7 @@ class Queue {
     this.dequeue();
     this.enqueue(7);
     this.enqueue(2);
+    this.frontFunc(); // print 4
     this.print();
   }
 }
