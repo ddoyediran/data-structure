@@ -62,9 +62,7 @@
 // console.log(list.head.data); // print 4
 // console.log(list); // print 2
 
-// https://www.youtube.com/watch?v=ChWWEncl76Y
-
-// doubly LinkedList
+// New approach
 class LinkedList {
   constructor() {
     this.head = null;
@@ -168,6 +166,8 @@ class ListNode {
   }
 }
 
+// Time to test
+
 let list = new LinkedList();
 
 list.append(1);
@@ -180,3 +180,7 @@ list.deleteHead();
 list.deleteTail();
 
 console.log(list);
+
+// Learning Resources you might find useful
+// Mycodeschool - http://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P
+// https://www.youtube.com/watch?v=ChWWEncl76Y
