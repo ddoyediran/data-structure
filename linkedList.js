@@ -69,7 +69,9 @@ class LinkedList {
     this.tail = null;
   }
 
-  // add to the end of the list
+  // helper method to add node to the tail of the list
+  // INPUT: Takes only one parameter
+  // RETURNS: prints nothings
   append(value) {
     // check if the list is empty
     if (!this.tail) {
@@ -85,7 +87,9 @@ class LinkedList {
     return;
   }
 
-  // method to add to the front of the list
+  // helper method to add node to the head of the list
+  // INPUT: Takes only one parameter
+  // RETURNS: prints nothings
   prepend(value) {
     // check if the list is empty
     if (!this.head) {
@@ -98,9 +102,12 @@ class LinkedList {
     this.head = new ListNode(value);
     this.head.next = oldHead;
     oldHead.previous = this.head;
+    return;
   }
 
-  // Method to delete the head
+  // helper method to delete the node at the head of the list
+  // INPUT: Takes no parameter
+  // RETURNS: prints to console when operation is performed
   deleteHead() {
     // check if list empty
     if (!this.head) {
@@ -119,7 +126,9 @@ class LinkedList {
     return;
   }
 
-  // method to delete the tail
+  // helper method to delete the node in the tail of the list
+  // INPUT: Takes no parameter
+  // RETURNS: prints to console when operation is performed
   deleteTail() {
     // check if list empty
     if (!this.tail) {
@@ -140,7 +149,9 @@ class LinkedList {
     return;
   }
 
-  // method to search
+  // Method: helper method to search if the list contain a value
+  // INPUT: Takes one parameter
+  // RETURNS: returns the node if found and print to console if not found.
   searchNode(value) {
     let currentNode = this.head;
 
@@ -156,6 +167,62 @@ class LinkedList {
     console.log("Value not present in the List");
     return;
   }
+
+  // method to add data at nth node of a link list
+  // INPUT: takes 2 parameter data and position
+  //
+  insert(value, position) {
+    // position < 1, no point to add the value
+    if (position < 1) {
+      console.log("we cannot add to position less than 1");
+      return;
+    } else {
+      // position >= 1
+      // check if list is empty
+      if (!this.head) {
+        if (position === 1) {
+          this.head = this.tail = new ListNode(value);
+          return;
+        }
+
+        if (position < 1 || position > 1) {
+          console.log("We cannot insert if position is not 1");
+          return;
+        }
+      }
+
+      let currentNode = this.head;
+      let counter = 1;
+      // let nextNode
+
+      while (currentNode) {
+        console.log("CurrN: ", currentNode);
+        if (counter === position) {
+          console.log("count & point 2: ", counter, position);
+          let nextNode = currentNode;
+          let previousNode = currentNode.previous;
+          currentNode = new ListNode(value); // bug here now working properly
+          currentNode.previous = previousNode;
+          currentNode.next = nextNode;
+          return;
+        }
+
+        currentNode = currentNode.next;
+        counter++;
+      }
+
+      console.log("Position don't exit");
+      return;
+    }
+  }
+  // check if the list is empty: then add or return an error accordingly - no need to traverse
+  // else:
+  // check if it has only one node: check if the position is 1 then prepend or if the position is 2 then append.
+  // more than one node
+  // trasverse to the position - 1
+  // add the new data
+  // point the previous to position - 1
+  // point the next of the data to position + 1
 }
 
 class ListNode {
@@ -172,12 +239,14 @@ let list = new LinkedList();
 
 list.append(1);
 list.append(2);
-list.append(5);
-list.prepend(8);
-list.prepend(3);
-list.searchNode(5);
-list.deleteHead();
-list.deleteTail();
+//list.append(5);
+//list.prepend(8);
+// list.prepend(3);
+// list.searchNode(5);
+// list.deleteHead();
+// list.deleteTail();
+
+list.insert(4, 1);
 
 console.log(list);
 
