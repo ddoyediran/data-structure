@@ -10,3 +10,7 @@ I try to learn a concept or data type e.g Learn how `Stack` works, then try to c
 
 Make sure `node` and `npm` are installed. check here if not: How to [Install Node](https://nodejs.org/en/download/).
 Then `cd` to your local directory where you cloned and run "node nameOfTheFile" e.g `node stackExample.js`.
+
+## I have an optimised solution "Memory and/ or Time"
+
+If you have an optimised solution. Feel free to let me know - remember I'm doing this to learn. Simple clone, create a branch, write your solution with explanation. commit and push. I look forward to your solution. Thank you in advance 🙏.
