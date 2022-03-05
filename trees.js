@@ -12,4 +12,18 @@
  * 6.) Height of x: Number of edges or length in the longest path from the root to Node x.
  *
  * Applications: storing hierarchical data (e.g File system), organize data (for quick search, insertation, deletion e.g Binary Search Tree), Tries (dictionaries), Network Routing Algorigthm
+ * 
+ * Binary Search Trees, BST
+ * BST is a binary tree in which for each node, the value of all the nodes in the right subtreeof the nodes are greater
+ * and the value of all the nodes in the left subtree are lesser or equal.
  */
+
+// Implementation
+
+class BinarySearchNode {
+  constructor(data, left, right) {
+    this.data = data;
+    this.left = left;
+    this.right = right;
+  }
+}
