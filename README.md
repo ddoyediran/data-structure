@@ -9,7 +9,7 @@ I try to learn a concept or data type e.g Learn how `Stack` works, then try to c
 ## How to run it
 
 Make sure `node` and `npm` are installed. check here if not: How to [Install Node](https://nodejs.org/en/download/).
-Then `cd` to your local directory where you cloned and run "node nameOfTheFile" e.g `node stackExample.js`.
+After you've installed Node, then `cd` to your local directory where you cloned and run "node nameOfTheFile" e.g `node stackExample.js`.
 
 ## I have an optimised solution "Memory and/ or Time"
 
