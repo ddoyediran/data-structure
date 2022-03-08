@@ -22,6 +22,14 @@
  * a.) BT must have atleast 2 children
  * b.) Must have exactly one root
  * c.) Exactly one path between root and any node.
+ * 
+ *  Schematic of a Binary Tree
+ *             
+ *                   a
+ *                 /   \
+ *                b     c
+ *               / \     \
+ *              d   e     f
  */
 
 // Implementation
