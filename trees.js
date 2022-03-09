@@ -42,25 +42,21 @@ class BinarySearchNode {
   }
 }
 
-let newNode = new BinarySearchNode(data);
+// function getNewNode(data) {
+//   let newNode = new BinarySearchNode(data);
+//   newNode.data = data;
+//   newNode.left = null;
+//   newNode.right = null;
 
-newNode;
+//   return newNode;
+// }
 
-function getNewNode(data) {
-  let newNode = new BinarySearchNode(data);
-  newNode.data = data;
-  newNode.left = null;
-  newNode.right = null;
+// class BinaryTree {
+//   contructor() {}
 
-  return newNode;
-}
-
-class BinaryTree {
-  contructor() {}
-
-  insert(root, data) {
-    if (root === null) {
-      root = getNewNode();
-    }
-  }
-}
+//   insert(root, data) {
+//     if (root === null) {
+//       root = getNewNode();
+//     }
+//   }
+// }
