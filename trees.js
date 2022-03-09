@@ -60,3 +60,23 @@ class BinarySearchNode {
 //     }
 //   }
 // }
+
+// Depth First Values
+
+const depthFirst = (root) => {
+  const stack = [root];
+
+  while (stack.length > 0) {
+    const current = stack.pop();
+
+    console.log(current.data);
+
+    if (current.left) {
+      stack.push(current.left);
+    }
+
+    if (current.right) {
+      stack.push(stack.right);
+    }
+  }
+};
