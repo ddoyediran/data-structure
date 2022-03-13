@@ -64,11 +64,18 @@ class BinarySearchNode {
 // Depth First Values
 
 const depthFirst = (root) => {
+  // check if root is empty
+  if (root === null) {
+    return [];
+  }
+
   const stack = [root];
+
+  const result = [];
 
   while (stack.length > 0) {
     const current = stack.pop();
-
+    result.push(current.data);
     console.log(current.data);
 
     if (current.right) {
@@ -79,6 +86,8 @@ const depthFirst = (root) => {
       stack.push(current.left);
     }
   }
+
+  return result;
 };
 
 const a = new BinarySearchNode("a");
@@ -94,4 +103,4 @@ b.left = d;
 b.right = e;
 c.right = f;
 
-depthFirst(a);
+depthFirst(a); // Return: a b d e c f
