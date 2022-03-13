@@ -71,12 +71,12 @@ const depthFirst = (root) => {
 
     console.log(current.data);
 
-    if (current.left) {
-      stack.push(current.left);
+    if (current.right) {
+      stack.push(current.right);
     }
 
-    if (current.right) {
-      stack.push(stack.right);
+    if (current.left) {
+      stack.push(current.left);
     }
   }
 };
@@ -93,3 +93,5 @@ a.right = c;
 b.left = d;
 b.right = e;
 c.right = f;
+
+depthFirst(a);
