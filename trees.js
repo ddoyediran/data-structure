@@ -80,3 +80,16 @@ const depthFirst = (root) => {
     }
   }
 };
+
+const a = new BinarySearchNode("a");
+const b = new BinarySearchNode("b");
+const c = new BinarySearchNode("c");
+const d = new BinarySearchNode("d");
+const e = new BinarySearchNode("e");
+const f = new BinarySearchNode("f");
+
+a.left = b;
+a.right = c;
+b.left = d;
+b.right = e;
+c.right = f;
