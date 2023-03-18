@@ -13,4 +13,4 @@ After you've installed Node, then `cd` to your local directory where you cloned 
 
 ## I have an optimised solution "Memory and/ or Time"
 
-If you have an optimised solution. Feel free to let me know - remember I'm doing this to learn. Simple clone, create a branch, write your solution with explanation. commit and push. I look forward to your solution. Thank you in advance 🙏.
+If you have an optimised solution. Feel free to let me know - remember I'm doing this to learn. Simply clone, create a branch, write your solution with explanation. commit and push. I look forward to your solution. Thank you in advance 🙏.
